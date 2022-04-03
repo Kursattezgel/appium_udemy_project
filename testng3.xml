@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Tezgel/Desktop/projects/kursat_deneme">
+        <groups>
+            <run>
+                <exclude name="Smoke"></exclude>
+            </run>
+        </groups>
+
+
+        <classes>
+            <class name="TestNGTutorial.Demo"></class>
+            <class name="TestNGTutorial.Demo2"></class>
+            <class name="TestNGTutorial.LoginHome"></class>
+            <class name="TestNGTutorial.LoginCar"></class>
+        </classes>
+    </test>
+
+
+
+</suite>

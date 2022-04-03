@@ -1,17 +1,19 @@
 package TestNGTutorial;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class LoginHome {
 
-
+    @Parameters({"URL"})
     @Test
-    public void WebLoginHomeLoan(){
+    public void WebLoginHomeLoan(String uname){
         //selenium
-        System.out.println("webloginhome");
+        System.out.println("webloginhomePersonalLoan");
+        System.out.println(uname);
     }
 
-    @Test
+    @Test(groups = {"Smoke"})
     public void MobileLoginHomeLoan(){
         //Appium
         System.out.println("Mobileloginhome");

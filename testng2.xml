@@ -2,27 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Tezgel/Desktop/projects/kursat_deneme">
-        <classes>
-            <class name="TestNGTutorial.Demo">
-                <methods>
-                    <include name="Demo"></include>
-                </methods>
-            </class>
-            <class name="TestNGTutorial.Demo2"></class>
-            <class name="TestNGTutorial.LoginHome"></class>
-        </classes>
+
+            <packages>
+                <package name="TestNGTutorial"></package>
+            </packages>
     </test>
     
-    <test name="Car Loan">
 
-        <classes>
-            <class name="TestNGTutorial.LoginCar">
-                <methods>
-
-                    <exclude name="API.*"></exclude>
-                    <!--<exclude name="Mobile.*"></exclude>  -->
-                </methods>
-            </class>
-        </classes>
-    </test>
 </suite>
