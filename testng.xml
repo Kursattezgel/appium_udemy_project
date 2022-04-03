@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <parameter name="URL" value="personalloan.com"></parameter>
+
     
     <test verbose="2" preserve-order="true" name="C:/Users/Tezgel/Desktop/projects/kursat_deneme">
+        <parameter name="URL" value="personalloan.com"></parameter>
+
         <classes>
             <class name="TestNGTutorial.Demo">
                 <methods>
@@ -18,6 +20,7 @@
 
     <test name="Car Loan">
         <parameter name="URL" value="carloan.com"></parameter>
+        <parameter name="APIKey/username" value="123456"></parameter>
         <classes>
             <class name="TestNGTutorial.LoginCar">
                 <methods>
