@@ -1,4 +1,5 @@
 package TestNGTutorial;
+import org.junit.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
@@ -11,11 +12,13 @@ public class Demo {
     @AfterTest
     public void lastExecution(){
         System.out.println("I will execute last");
+
     }
 
     @Test
     public void Demo(){
         System.out.println("hello"); //automation
+        Assert.assertTrue(false);
     }
 
     @AfterSuite
